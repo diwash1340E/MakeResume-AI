@@ -1,0 +1,20 @@
+:root{--navy:#003366;--slate:#6b7280}
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;font-family:Inter, Roboto, Arial, sans-serif}
+.app{display:flex;height:100vh}
+.sidebar{width:360px;background:#f7f9fc;border-right:1px solid #e6eef8;padding:16px}
+.content{flex:1;padding:24px;overflow:auto}
+.sidebar-top h3{margin:0 0 8px 0;color:var(--navy)}
+.gauge{background:#e6eef8;height:12px;border-radius:999px;overflow:hidden;margin-bottom:8px}
+.gauge-fill{background:var(--navy);height:100%;width:0;transition:width 300ms}
+.gauge-label{font-weight:600;color:var(--navy);margin-bottom:12px}
+.sidebar-middle input[type=file]{margin-bottom:8px}
+.sidebar-middle textarea{width:100%;height:90px;margin-bottom:12px;padding:8px}
+.sidebar-bottom .primary{width:100%;padding:10px;background:var(--navy);color:white;border:none;border-radius:6px;cursor:pointer;margin-bottom:12px}
+.tabs{display:flex;gap:6px;margin-bottom:8px}
+.tabs button{flex:1;padding:8px;border:1px solid #cbd5e1;background:white;cursor:pointer;border-radius:4px}
+.tabs button.active{background:var(--navy);color:white;border-color:var(--navy)}
+.tab-content{background:white;padding:8px;border:1px solid #e2e8f0;border-radius:6px;min-height:120px}
+.result{white-space:pre-wrap;font-family:inherit;font-size:13px}
+.empty{color:var(--slate)}
+.preview textarea{width:100%;height:140px;padding:8px}
